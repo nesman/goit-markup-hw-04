@@ -1,0 +1,547 @@
+:root {
+  --black: #000000;
+  --very-dark-gray: #212121;
+  --blue: #2196f3;
+  --dark-grayish-blue: #2f303a;
+  --white: #ffffff;
+  --grayish-blue: #f5f4fa;
+  --dark-gray: #757575;
+  --color-line: #e5e5e5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*...........................................main elements*.................................*/
+
+.wrapper {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.conteiner-footer {
+  width: 1600px;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+  color: var(--black);
+}
+
+a {
+  margin: 0px;
+  text-decoration: none;
+  color: var(--very-dark-gray);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .................................................general classes...................................*/
+
+.conteiner {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+/* ......................................................navigation part ............................................................*/
+
+.head-menu {
+  width: 1600px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--white);
+}
+
+.head-menu {
+  border-bottom: solid 2px;
+  border-color: var(--color-line);
+}
+
+h2 {
+  font-family: "roboto", sans-serif;
+  font-weight: 700px;
+  size: 26px;
+  line-height: 36px;
+
+  text-decoration: none;
+}
+
+.menu-navigation {
+  width: 254px;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  gap: 30%;
+  display: flex;
+  margin-left: 215px;
+}
+
+.photo-frame {
+  height: 294;
+  width: 370;
+}
+
+.filter-list {
+  margin: 0;
+  border: none;
+}
+
+.filter-select {
+  border: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin: 0;
+}
+
+.main-logo {
+  font-family: "raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1px;
+  letter-spacing: 3%;
+  padding: 24px 15px 25px 15px;
+  color: var(--black);
+}
+
+.main-page-logo {
+  font-family: "raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 3%;
+  color: var(--blue);
+}
+
+.main-nav {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  gap: 46px;
+}
+
+.nav-1 {
+  margin-left: 93px;
+}
+
+.nav-2 {
+  margin-left: 46px;
+}
+
+.nav-3 {
+  margin: 46px;
+  margin-right: 50px;
+  width: 51px;
+  height: 16px;
+}
+
+.contact-link-mail {
+  padding-left: 10px;
+  line-height: 16.41px;
+}
+
+.nav a:hover,
+.nav a:active,
+.nav a:focus {
+  color: var(--blue);
+}
+
+.contact-link-mail:hover {
+  color: var(--blue);
+}
+
+figure {
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+}
+
+.menu-contact {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactbox {
+  width: 550px;
+  padding-right: 227px;
+}
+
+.contacts {
+  list-style: none;
+
+  color: var(--grey);
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-link:hover,
+.contact-link:focus,
+.contact-link:active {
+  color: var(--blue);
+}
+
+.filter-name {
+  padding-bottom: 20px;
+  color: #757575;
+}
+
+/* ........................................................................main page menu..........................................................................*/
+.bilboard {
+  background: var(--very-dark-gray);
+  width: 1600px;
+  height: 600px;
+  margin: 0px;
+  text-align: center;
+  padding: 200px 452px 280px 452px;
+  color: var(--white);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bilboard-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: 696px;
+  height: 120px;
+  margin-left: 100;
+  margin-bottom: 30px;
+}
+
+.bilboard-button {
+  cursor: pointer;
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 41px 10px 42px;
+}
+
+.bilboard-button {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+/* ..................................................main part  middle................................................................*/
+
+.conteiner-descripction {
+  background-color: var(--white);
+  padding-bottom: 0px;
+  margin: 0px;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.descripction-zone {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  list-style: none;
+}
+
+.descripction-item {
+  width: 270px;
+  height: 101px;
+}
+
+.descripction-title {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.descripction-text {
+  color: var(--dark-gray);
+  line-height: 1.71;
+  width: 270px;
+}
+
+/* ..............................................................main part  lower.....................................................*/
+
+.head-section {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 94px 0 50px 0;
+}
+
+.first-section {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 94px 0 94px 0;
+}
+
+.first-section-name {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  justify-content: center;
+}
+
+.head-section-picture {
+  flex-basis: auto;
+  padding: 10px;
+}
+
+/* ................................................................main part  lowest...............................................*/
+.conteiner-descripction {
+  padding-top: 94px;
+}
+
+.section-person-card {
+  background-color: var(--grayish-blue);
+  align-items: center;
+  padding-bottom: 94px;
+}
+
+.person-card {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.person-card-picture {
+  text-align: center;
+  background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.22);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.person-frame {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.person-card-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
+
+.workplace {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--grey);
+}
+
+/* .................................................................footer..................................................................*/
+
+.adress-list {
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+.adres {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.concact {
+  color: var(--white);
+  font-style: normal;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  opacity: 0.6;
+  padding-top: 9px;
+}
+
+footer {
+  width: 1200px;
+  height: 252px;
+  display: flex;
+  background: var(--dark-grayish-blue);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-logo-footer > a {
+  font-family: "raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1px;
+  letter-spacing: 3%;
+  color: var(--white);
+}
+
+.main-logo-footer {
+  padding: 60px 0 20px 0;
+}
+
+.main-page-logo-footer {
+  font-family: "raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 3%;
+  color: var(--blue);
+}
+
+.conteiner-footer {
+  width: 1600px;
+}
+
+/* ..........................................................portfolio styles ................................................*/
+
+.filter-page {
+  background-color: var(--white);
+  width: 100%;
+  height: 1240px;
+
+  gap: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navi-filtr {
+  display: flex;
+  column-gap: 8px;
+  justify-content: center;
+  list-style-type: none;
+  margin-left: auto;
+}
+
+.navi-filtr {
+  padding-bottom: 54px;
+}
+
+.filtr-button {
+  font-family: "Roboto";
+  cursor: pointer;
+  background-color: var(--grayish-blue);
+  color: var(--black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  text-align: center;
+  min-width: 0px;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 28px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.filter-select {
+  text-align: left;
+  background-color: var(--white);
+
+  height: 404px;
+  width: 370px;
+  list-style-type: none;
+}
+
+.navigation {
+  padding: 56px 0 94px 0px;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.filtr-button:hover,
+.filtr-button:focus,
+.filtr-button:active {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.picture-select-name {
+  padding: 20px 0 0 24px;
+  background-color: var(--white);
+}
+
+.photo-frame {
+  border: 1px solid #eeeeee;
+}
+
+.filter-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+  letter-spacing: 0.06em;
+  color: var(--black);
+}
+
+.project-type {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 3;
+  text-align: left;
+  letter-spacing: 0.03em;
+  color: var(--dark-gray);
+}
